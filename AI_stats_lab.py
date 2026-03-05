@@ -278,7 +278,7 @@ def diabetes_compare_gd_vs_analytical(
     theta_cosine_sim = np.dot(theta_gd, theta_an) / (
         np.linalg.norm(theta_gd) * np.linalg.norm(theta_an)
     )
-
+    # Changing to rerun the yml
     return {
         "theta_l2_diff": float(theta_l2_diff),
         "train_mse_diff": float(abs(gd_train_mse - an_train_mse)),
